@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="instruc-style.css">
+    <script src="instruct.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-img">
+            <img src="in/Dragon Age.jpg" style: width="100%" alt="A low opacity image of the loading screen for Dragon Age: Origins">
+        </div>
+        <h1>
+            Creating a Morph for a NPC in Dragon Age Origins
+        </h1>
+            When it comes to modding a game, it can seem quite daunting, even when looking to mod something small. For 
+        Dragon Age: Origins, modding has been made easier by the release of the Dragon Age Toolset. Though with the
+        loss of BioWare forums and with Dragon Age: Origins being 12 years old, finding instructions on how to use the 
+        Dragon Age Toolset can be hard to find.</p>
+
+            One of the easy ways to mod the game with the toolset is by creating a Morph. A Morph is more or less, the head 
+        of a character, the model of their face. One of the easiest things to do with a morph, is create one for an NPC.
+        The process only requires the Dragon Age Toolset, and can be completed in a matter of minutes.</p>
+
+            These instructions will go through step by step how to create a morph and then replace a Non Player Character's default
+        morph. </p>
+
+        <div class="reqs">
+          <div class="req">
+            <h3>Required:</h3>
+              <ul>
+                <li>Dragon Age: Origins installed on your PC</li>
+                <li>The Dragon Age Toolset installed</li>
+              </ul>
+          </div>
+          <div class="req">
+            <h3>Recommended:</h3>
+            <ul>
+              <li>An existing save with your character near the NPC who's morph you are overriding</li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <button type="button" class="collapsible">Creating A Morph</button>
+        <div class="content">
+          <p>This section will cover the creation of a Morph in the Dragon Age Toolset.</p>
+          <p>The morph itself is the 3d model of the character's head. This model can be edited much like
+            the way one can create a player character in the game itself, with customizing sliders and selections.
+            However, nagivating the toolset and editing a morph in the toolset functions differently from the in-game 
+            character creator.
+          </p>
+            <button type="button" class="collapsible">Opening New File</button>
+              <div class="content">
+                <p>When opening the program, first you need to create a new file. In the menu bar
+                  under file > new, and select the <i>Morph</i> option in the dropdown menu.
+                </p>
+                <div class="imgcont">
+                  <img src="in/file morph.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Opening the File</h4>
+                    In the Dragon Age Toolset, click on the <i>File</i> in the top left-hand corner, in the
+                     dropdown menu, then hover over <i>New</i>. In the dropdown menu that appears, locate <i>Morph</i> which
+                     is located roughly halfway down the list. Click <i>Morph</i>, this will create a new morph file.
+                  </div>
+                </div>
+                
+                <p>Nothing will appear at first, because in order to edit the morph, you need to select
+                  the base morph. Dragon Age: Origins has seperate morphs for each race and gender. Humans,
+                  for example, are split into the HM (Human Male) morph and the HF (Human Female) morph.
+                </p>
+                <div class="imgcont">
+                  <img src="in/base pre.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Selecting Base</h4>
+                    The window will remain blank until you select an option in the <i>[Choose Base]</i> dropdown list.
+                     This is located in the main toolbar under the <i>Help</i> menu.
+                  </div>
+                </div>
+          
+                <p>
+                  In the dropdown box, you need to select the base for the character you are creating a morph for.
+                  The first letter is the race (Human, Elf, Dwarf) and second letter is the gender (Male, Female).
+                </p>
+
+                <div class="imgcont">
+                  <img src="in/base select.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Selecting Base Cont.</h4>
+                    In the dropdown menu, the base models are listed. You need to select the appropriate base for the 
+                    character you are creating a morph for. The models are: HM (Human Male), HF (Human Female), DM (Dwarf Male), 
+                    DF (Dwarf Female), EM (Elf Male), EF (Elf Female), QM (Qunari Male), and KN (Human child).
+                  </div>
+                </div>
+                
+                <p>
+                  For example, if you are creating a morph for Leliana, her morph needs to be HF.
+                </p>
+
+                <div class="imgcont">
+                  <img src="in/base post.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Selecting Base Cont.</h4>
+                    The morph needed for a character is simple to discern, as it is simply their race and gender. For the 
+                    example, we will create a morph for Leliana. Leliana is a human female, so she needs the HF morph. Once 
+                    a base is selected, the base will appear. Unlike the game, the toolset does not have preset faces aside 
+                    from the base, so all morphs must be created from the appropriate base.
+                  </div>
+                </div>
+                
+              </div> 
+            <button type="button" class="collapsible">Learning Basic Controls</button>
+              <div class="content">
+                <h3>Rotating Model</h3>
+                <p>The model can be rotated by holding shift then holding right click with the mouse and dragging it.</p>
+                <div class="imgcont">
+                  <img src="in/rotate model.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Rotating the Model</h4>
+                    Instead of a button for rotation, rotating the model requires holding the SHIFT key while 
+                    holding the <i>right click</i> button on the mouse and then moving the mouse. This rotates the model on the
+                     horizontal axis (left and right).
+                  </div>
+                </div>
+                
+                <h3>Moving Camera</h3>
+                <p>By holding CTRL and right clicking and dragging, you can rotate the camera on the positive vertical axis
+                  (you can roate above the morph, but not below) and on the horizontal axis.
+                </p>
+                <div class="imgcont">
+                  <img src="in/rotate camera.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Rotating the Camera</h4>
+                    The camera in the toolset can be rotated more than the model itself. By holding Control (CTRL) and holding 
+                    the right mouse button while draggon the mouse, the camera can be rotated up and side to side. The camera cannot 
+                    rotate under the model. At the default distance, when rotating up the camera clips (passes through) the model.
+                  </div>
+                </div>
+                
+                <p>By scrolling with the mouse wheel, you can move the camera in or out, you can also freely move the camera
+                  by holding CTRL and dragging left click.
+                </p>
+                <div class="imgcont">
+                  <img src="in/move camera.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Moving the Camera</h4>
+                    To move the camera's position, you hold Control (CTRL) and hold <i>left click</i> while dragging the mouse. The 
+                    Toolset's controls are sensitive, so small mouse movements corresponds to large camera movements.
+                  </div>
+                </div>
+                
+                <p>At any point, you can right click in the display and click the option zoom to object that appears. This will
+                  return the camera to its default zoom, but will keep the angle the camera has.
+                </p>
+                
+                <div class="imgcont">
+                  <img src="in/zoom to object.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Resetting the Camera</h4>
+                    At any point, you can <i>left click</i> with the mouse on the display window. A small menu will pop up, and clicking 
+                    the option <i>Zoom to Object</i> in the menu will effectively reset the camera's position. Any changes made to the 
+                    camera's position or zoom will be undone and the camera will revert to its default placement. 
+                  </div>
+                </div>
+                
+                <h3>View Settings</h3>
+                
+                <p>
+                  Under the object inspector on the right hand side of the application, one of the tabs available is the
+                  View Settings tab. Under this tab, positioning of the model and camera can be edited directly with numerical
+                  values.
+                </p>
+
+                <div class="imgcont">
+                  <img src="in/view settings change.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Changing View Settings</h4>
+                    Instead of using the mouse, the camera and model's position and rotation can be changed in the <i>View Settings</i> 
+                    tab in the Object Inspector. The 13th tab in the object inspector has the numerical data for the camera and model position 
+                    and rotation. These fields can be edited directly. This can be helpful especially for precise movements or angles you may
+                     desire.
+                  </div>
+                </div>
+                
+              </div>
+            <button type="button" class="collapsible">Editing the Morph</button>
+              <p>
+                This section will walk through the technical side of editing the morph, such as methods of editing and 
+                how unique aspects are edited. These are not instructions on the artistic aspect of creating a morph, as 
+                there is no one correct way to create a morph, only a correct way to use the tools. 
+              </p>
+              <div class="content">
+                <h2>General Controls</h2> 
+                <p>
+                  To customize the morph, you simply edit the values shown in the Object Inspector window. Within the Object
+                  Inspector there are 4 types of formats for customization options, these are file selection (kebab menu), 
+                  value slider, mutually exclusive sliders, and multi option Sliders.
+                </p>
+                <h3>File Selection</h3>
+                <div class ="subcontent">
+                  <p>
+                    File selection is used in fields that have one thing that needs to be selected, such as tint files
+                    (the color of something, such as skin, hair, or makeup), textures, tattoos, beards, or hair. These may
+                    appear alongside sliders.
+                  </p>
+                  <button type="button" class="collapsible">Selecting Files</button>
+                  <div class="content">
+                    <p>
+                      In some fields, the value field shows a kebab button (a button with 3 dots, ...). Selecting that will
+                      prompt a pop-up window in which a file must be chosen. All the files are from the game files, and the
+                      correct directory is already open, all that is required is to select a file from the window.
+                    </p>
+                    <div class="imgcont">
+                      <img src="in/kebab.png" style: width="80%">
+                      <div class="imgcaption">
+                        <h4>Selecting a File</h4>
+                        For some fields, there may be data or a blank area follwed by a <i>kebab</i> button, a button with 3 dots. 
+                        For these fields, click the kebab button. This will bring up a window that allows the selection of a file 
+                        for what is being customized. In this example, we are selecting the tint file (color) for the lip makeup. 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3>Sliders</h3>
+                <div class ="subcontent">
+                  <p>
+                    Sliders are the typical way to customize in game, something that carries over to the toolset.
+                    Unlike the game, however, the sliders in the toolset are also commonly used for opacity (transparency).
+                  </p>
+                  <button type="button" class="collapsible">Using Sliders</button>
+                  <div class="content">
+                    <p>
+                      For customization of things like the nose, eyes, mouth, etc. sliders are used identically to the game:
+                      the slider corresponds to its titled value. For example, the slider for nose bridge width changes the width
+                      of the morph's nose bridge width.
+                    </p>
+                    <p>
+                      Sometimes, however, the toolset will pair both a file selection and a slider. In these cases,
+                      the slider corresponds to the opacity or intensity of the file selected. For things like makeup, tattoos,
+                      and eyebrows, the color or shape is selected, and the slider then allows to adjust the opacity of the color.
+                    </p>
+                    <div class="imgcont">
+                      <img src="in/slider.png" style: width="80%">
+                      <div class="imgcaption">
+                        <h4>Using a Slider</h4>
+                        Similar to the character creation in game, sliders work by right clicking and dragging the pointer on 
+                        the slider. The slider value can also be changed by clicking the slider field and scrolling with the mouse 
+                        wheel. Some sliders for features allow for negative value, for the example though, the slider is for 
+                        opacity so it cannot go below 0.
+                      </div>
+                    </div>
+                    <h3>Mutually Exclusive Sliders</h3>
+                    <div class ="subcontent">
+                      <p>
+                        Some sliders in the toolset present multiple possible sliders, but only one can be chosen.
+                      </p>
+                      <button type="button" class="collapsible">About Mutually Exclusive Sliders</button>
+                      <div class="content">
+                        <p>
+                          For some features, there are multiple sliders presented, such as for eye shape or for eyebrows.
+                          Only one slider can be moved, by moving one slider to a value above the base value of 0, the other
+                          sliders are greyed out and cannot be used. 
+                        </p>
+                        <div class="imgcont">
+                          <img src="in/mutually exclusive sliders.png" style: width="80%">
+                          <div class="imgcaption">
+                            <h4>Using Mutally Exclusive Sliders</h4>
+                            For some features, numerous sliders are presented but only one can be used. By changing the value of the slider, the other 
+                            slider options become inaccesible. This can be undone by setting the slider to 0. 
+                            In the example, the eyebrows sliders are mutually exclusive, The slider's value 
+                            corresponds to the opacity of the slider's eyebrow. 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Multi Option Sliders</h3>
+                    <div class ="subcontent">
+                      <p>
+                        Differing from the mutually-exclusive sliders, multi option sliders allow for the sliders to be
+                        used concurrently. 
+                      </p>
+                      <button type="button" class="collapsible">About Multi Option Sliders</button>
+                      <div class="content">
+                        <p>
+                          Notably, this is used for nose shapes. There are numerous preset nose shapes which can be used
+                          with a slider, but all the sliders can be used at the same time. This allows for creating a nose shape
+                          that is a mix of multiple shapes.
+                        </p>
+                        
+                        <div class="imgcont">
+                          <img src="in/non exlcusive sliders.png" style: width="80%">
+                          <div class="imgcaption">
+                            <h4>Using Multi-Option Sliders</h4>
+                            For a few sliders, numerous options are presented, but unlike the mutually exclusive sliders, 
+                            all the sliders may be toggled and edited. In the example, we are using the slider for multiple 
+                            nose shapes to create a nose shape that is a mix between the two preset shapes.
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <h2>Special Sections</h2>
+                <p>In the Object Inspector there are a total of 15 tabs, 13 of which contain options for customization, while some
+                  are self-explanitory in their customization and options, some have unique properties. Specifically, the Matierials
+                  section and the Part Selection section have special properties.
+                </p>
+                <h3>Materials</h3>
+                <div class="subcontent">
+                  <p>
+                    The Materials tab covers the customization of the skin tone, make up color, make up opacity (transparency), and 
+                    skin texture. While the skin tone and make up follows the simple process of selections and sliders, the skin texture
+                    customization is slightly more complex. 
+                  </p>
+                  
+                  <button type="button" class="collapsible">How to Edit Skin Texture and Type</button>
+                  <div class="content">
+                    
+                    <p>Under the Material tab, the Skin Texture section has the selection for a base texture, and blend texture. 
+                      The default blend texture is the texture for an old person. The available selections for the vanilla (unmodded)
+                      game are severely limited. The selection can be expanded by downloading mods, if a skin texture is desired, however 
+                      skin textures and types are not neccesary for a morph.
+                      </p>
+                      <div class="imgcont">
+                        <img src="in/skin texture.png" style: width="80%">
+                        <div class="imgcaption">
+                          <h4>Skin Texture Options</h4>
+                          Within the material tab, find the section labeled "Skin Texture". The blend texture is the texture which 
+                          will be used for skin texture and type. With the selected texture, you can overlay the texture in certain 
+                          areas at any opacity. 
+                        </div>
+                      </div>
+                      
+                    <p>
+                      The sliders below allow for the blend texture to be overlaid
+                      over the base texture at varying opacities. The Skin Texture will change the coloring of the skin.</p>
+                      <div class="imgcont">
+                        <img src="in/skin texture a.png" style: width="80%">
+                        <div class="imgcaption">
+                          <h4>Step X</h4>
+                          With the blend sliders under the Skin Texture section, these correspond to the coloring of the texture 
+                          selected but does not change the constrution of the 3-d model. In this example, the blend option selected is 
+                          the base game's "old" texture, and the skin texture slider changes the opacity of the colors from the "old" 
+                          texture.
+                        </div>
+                      </div>
+                    
+                    <p>The Skin Type section below that functions similar to the Skin Texture, but instead of adding color to the base,
+                      it will change the 3d texture associated with the blend. For the old texture, this will give the model wrinkles but
+                      with no skin discoloration or shading. </p>
+                      <div class="imgcont">
+                        <img src="in/skin texture b.png" style: width="80%">
+                        <div class="imgcaption">
+                          <h4>Step X</h4>
+                          Below the Skin Texture section you will find the Skin Type section. The Skin Type section has the 
+                          same set up of sliders that the Skin Texture section had, however these sliders correlate to the 3-d 
+                          aspect of the skin textures. In the example, the "old" texture changes the surface of the morph is to 
+                          have wrinkles
+                        </div>
+                      </div>
+                    
+                  </div>
+                    
+                  </div>
+                  <h3>Part Selection</h3>
+                  <div class="subcontent">
+                    <p>In Part selection, details such as eye color, hair color, hair, beard (male only), stubble, and eyebrows.
+                      It also is where tattoos can be selected, however, single tattoos are not broken up into files for selection,
+                      but rather, a single tattoo file holds 4 tattoo designs which are visible via slider options.
+                    </p>
+                    <button type="button" class="collapsible">How to Select Tattoos</button>
+                    <div class="content">
+                      <p>
+                        Under the first field under the Tattoo section, the option <i>Tattoo Mask</i> is the selection for the
+                      tattoo file. While the file names are somewhat informative of the files content (av is Avaar tattoos, dw is Dwarf tattoos,
+                      ed is Dalish Elf tattoos) each file contains 4 tattoos so you might need to check a few tattoo files if you are
+                      lookng for a specific tattoo.
+                      </p>
+                      <div class="imgcont">
+                        <img src="in/tattoo intro.png" style: width="80%">
+                        <div class="imgcaption">
+                          <h4>Selecing a Tattoo</h4>
+                          In the Tattoo section, the tattoo file is selected in the "Tattoo Mask" field 
+                          via the file selection method seen earlier. The files are broken up into groups, mainly 
+                          Avaar, Elven, and Dwarven. In the example, we are selecting an Avaar tattoo file.
+                        </div>
+                      </div>
+                      
+                      <p>
+                        How the tattoo files work is a single tattoo is stored in each color channel of the file. One in the Red, Blue,
+                        Green, and Alpha channels. The sliders for the channels as such serve as sliders for a single tattoos opacity. 
+                      </p>
+                      <div class="imgcont">
+                        <img src="in/tattoo 4.png" style: width="80%">
+                        <div class="imgcaption">
+                          <h4>Selecting a Tattoo cont.</h4>
+                          An indidual tattoo is selected with a slider. The file selected in the previous step contains 4 
+                          tattoos, all of which can be used similtaniously. The sliders are labeled as channels, this is because 
+                          the tattoo stores a unique tattoo in each color channel. In the example, you can see the 4 tattoos which 
+                          are stored in the Avaar tattoo file we selected.
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+                
+              
+              </div>
+        </div> 
+
+        <button type="button" class="collapsible">Saving the Morph</button>
+        <div class="content">
+          <p>
+            Once your morph has been customized to your liking, the next step is to save it. To properly save and export it,
+            first its important to know what morph files do what, and the proper method of exporting.
+          </p>
+          <button type="button" class="collapsible">Learning File Extensions</button>
+              <div class="content">
+                <p>
+                  At this point, in your toolset, you should notice the file name shown is <i>Untitled.mrh</i>.  
+                </p>
+                <div class="imgcont">
+                  <img src="in/finished mrh.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>The MRH File</h4>
+                    At this point, you should have a morph to your liking. You may notice in the application window, this 
+                    morph is listed as <i>Untitled.mrh</i>. This is the current name of the file, and the current file format.
+                  </div>
+                </div>
+                <p>
+                  An MRH File
+                  is the <i>editable</i> file of a morph, not a file that the game can use. The file the game needs for a 
+                  character's morph is a MOR file, which cannot be edited. While the MRH file is not needed after the morph is 
+                  exported, it is <b>strongly recommeneded</b> that the MRH is saved, as without it, there is no way to edit 
+                  the morph.
+                </p>
+                <p>
+                  To save the file, simple click file > save as, and then name and save the file.
+                </p>
+                <div class="imgcont">
+                  <img src="in/save as.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Saving the MRH File</h4>
+                    The MRH file can be saved just as any file, click the <i>File</i> option in the top left corner, then click the 
+                    <i>Save As</i> option in the menu. A window will appear in which you can choose where the file is being saved, 
+                    and what the file's name is. In the example, since it is a morph of leliana, we saved it as <i>Leliana.mrh</i>. 
+                    Saving this file is the only way to edit it in the future.
+                  </div>
+                </div>
+                <br>
+                <div class="imp">
+                  .MRH is the <i>editable</i> version of the morph file.<br>
+                  .MOR is the exported, <i>uneditable</i> version of the morph.
+                </div>
+              </div>
+          <button type="button" class="collapsible">Exporting the Morph</button>
+              <div class="content">
+                <p>
+                  Before the morph can be exported, it must be saved. It does not matter where the file is saved, as the 
+                  .mrh file is not one the game uses. As stated, though, it is strongly recommended to keep the file. The .mrh file 
+                  can be named anything, it is recommended that you name it something descriptive, such as the name of the 
+                  character you are creating a morph for.
+                </p>
+                <p>
+                  Once the .mrh file has been saved, the file can now be exported. To do this, you can either right click and choose
+                  the <i>Post to Local</i> option that appears, or alternatively, Post to Local can be located under Tools > Export >
+                   Post to Local.
+                </p>
+                <div class="imgcont">
+                  <img src="in/post to local.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Exporting the File</h4>
+                    Once the file has been saved as a mrh, the file can be exported by right clicking and selecting the option 
+                     <i>Post to Local</i>. Once clicked, the process is automatic and requires no further input from you.
+                  </div>
+                </div>
+                <p>
+                  In the console in the toolset, it will read out whether the export was successful, and importantly, the location of
+                  where the file exported. Rememeber the location of the file as it is neccesary for the next step.
+                </p>
+                <div class="imgcont">
+                  <img src="in/export.png" style: width="80%">
+                  <div class="imgcaption">
+                    <h4>Reading the Console</h4>
+                    The console located in the bottom left of the application will read the output of the export process, including 
+                    whether the file exported sucessfully and where the file was exported to. The location of the exported file should 
+                    be noted as the final steps involve locating the file in your file explorer. In the example, our morph was successfully 
+                    exported to the ToolSetExport file in our Override folder.
+                  </div>
+                </div>
+              </div>
+        </div> 
+
+        <button type="button" class="collapsible">Overriding the Default</button>
+        <div class="content">
+          <p>
+            The final step is to give the file the correct name and place it in the correct override folder. Both steps 
+            are essential, as the override will not work if the file is not correctly named or if it is in the wrong folder.
+          </p>
+          <button type="button" class="collapsible">Finding the Correct Name</button>
+            <div class="content">
+              <p>
+                The exported file can be found in the directory the console shows. When it is exported, it will be export with the
+                base prefix (as explained in the Creating a Morph section). 
+              </p>
+              <div class="imgcont">
+                <img src="in/exported.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Locating the MOR File</h4>
+                  In your file explorer, locate the exported .MOR file. The exact location can be found by reading the console 
+                  as mentioned in the previous step. Regardless of your file's name, the exported MOR file will export with a prefix 
+                  of the base model's abbrevation. For the example, the file was saved as Leliana.MRH but exported as HF_Leliana.MOR.
+                </div>
+              </div>
+              <p>
+                In order to override a Non Player Character's morph, first you need to find what that NPC's moprh is named. This 
+                can be found using the Dragon Age Toolset. In the <i>Palette Window</i> on the righthand side of the window, find the 
+                <i>Creature</i> section which is shown with the fox head icon. 
+              </p>
+              <div class="imgcont">
+                <img src="in/creatures.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Locate Creature List</h4>
+                  On the top right-hand side, the creatures list can be found inside the palette window. The creatures list has an 
+                  icon of a fox head. Click on this to bring up the creature list.
+                </div>
+              </div>
+              <p>
+                In the Creature list, you can find the NPC you are overriding by what part of the game they are in. If they are a 
+                companion, their file can be found under Global > Followers. Once you locate the character, clicking on the name will 
+                bring up the character's information in the Object Inspector.
+              </p>
+              <div class="imgcont">
+                <img src="in/leliana.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Finding the NPC</h4>
+                  The creature list is organized by the game chapter for minor NPCs, but companions and major recurring characters 
+                  are located under the <i>Global</i> folder. Once you locate the NPC you are planning to override, click on their name. 
+                  In our example, Leliana is found under Global > Followers. 
+                </div>
+              </div>
+              <p>
+                In the Object Inspector, under the <i>Apperance</i> section, find the field for <i>Head Morph</i>>. For example,
+                Leliana's Head Morph is hf_genfl_leliana.mor. This is what you need to rename your morph file.
+              </p>
+              <div class="imgcont">
+                <img src="in/leliana name.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Finding the Morph Name</h4>
+                  Once you click the NPC's name, the Object Inspector will populate with the information of that character's file. 
+                  Among the information is a section called <i>Apperance</i>. It is under this section you can find the information of 
+                  the NPC's head morph's name. For Leliana, her head morph is listed as hf_genfl_leliana.mor. 
+                </div>
+              </div>
+              <p>
+                Locate your exported .mor file and rename it the name listed (you can copy and paste it from the Toolset). 
+              </p>
+              <div class="imgcont">
+                <img src="in/renamed.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Rename your Morph</h4>
+                  Your morph file must have the name that is listed as the NPC's head morph. Copy the name of the morph, then return 
+                  to your file explorer and locate your file. Right click the file, click rename, and paste the name from the Toolset. 
+                </div>
+              </div>
+              <p>
+                Now that the morph is in the correct format and has the correct name, now it can be used to override the default
+                 morph.
+              </p>
+            </div>
+          <button type="button" class="collapsible">Placing the File in Override</button>
+            <div class="content">
+              <p>In your Documents Folder, click on BioWare > Dragon Age > Modules > Single Player > Overrride, and place
+                the correctly named morph from the previous step. This will override the default morph.
+              </p>
+              <div class="imgcont">
+                <img src="in/placement.png" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Placing the File</h4>
+                  Cut or copy the file you just renamed. Then, in your documents folder, click on Bioware > Dragon Age > Modules > 
+                  Singe Player > Override. In this folder, paste the morph. In our example, we cut the file from its original place and 
+                  placed in in this directory.
+                </div>
+              </div>
+              <p>
+                You can now play the game as usual and your new morph will be in it! 
+              </p>
+              <div class="imgcont">
+                <img src="in/in game.jpg" style: width="80%">
+                <div class="imgcaption">
+                  <h4>Launch the Game</h4>
+                  The game can now be launched from Steam or Origin. If you have a save with your player near the NPC you edited,
+                  open that save and you can quickly check how the morph looks in game. If you desire to change it you can then return 
+                  to the editing and export process. In our example, we opened a save with the Player Character at the party camp and initiated dialogue 
+                  with Leliana, where you can see she has the new morph. 
+                </div>
+              </div>
+              <p>
+                If you desire to change the morph after its in game, simply export a new morph, and follow the same renaming steps,
+                 and place it in the folder mentioned above.
+              </p>
+            </div>
+          </div> 
+
+        
+    </div>
+    
+</body>
+</html>

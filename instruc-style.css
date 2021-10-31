@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(29, 24, 21);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.header-img img{
+    opacity: 0.5;
+}
+
+
+.container{
+    background-color: rgb(236, 222, 205);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    border:rgba(0, 0, 0, 0.521);
+    border-style: solid;
+    border-width: 5px;
+}
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    background-color: rgb(77, 48, 35);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 5px 0px;
+    outline: none;
+    font-size: 20px;
+  }
+
+  /* Style the button that is used to open and close the collapsible content */
+  .content .collapsible{
+    background-color: rgb(77, 38, 35);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 5px 0px;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: rgb(121, 77, 56);
+  }
+
+  .active, .content .collapsible:hover{
+    opacity: .85;
+    font-style: italic;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  
+
+
+
+  .minicollapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .minicollapsible:active {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    padding-bottom: 36px;
+    display: none;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: #ffffff6c;
+  } 
+
+  .content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .subcontent {
+    background-color: #f1f1f1;
+  } 
+
+  .subcontent .collapsible{
+    font-size: 16px;
+    padding: 12px;
+    background-color: rgb(49, 17, 24);
+  }
+
+  .imgcont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  .imgcaption{
+    background-color: darkgray;
+    padding: 0px 16px;
+    width: 20%;
+    font-style: italic;
+    font-size: 17px;
+  }
+
+  .imp{
+    background-color: rgba(204, 64, 64, 0.336);
+    font-weight: bold;
+    padding: 8px 18px;
+  }
+
+  .reqs{
+    display: flex;
+    width: 100%
+  }
+
+  .req{
+    width: 50%;
+    padding: 8px;
+  }
+
+  h4{
+    padding-top: 0px;
+  }
+
+ 
